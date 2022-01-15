@@ -13,6 +13,7 @@ module.exports = {
 
   deploy: {
     production: {
+      key:'/c/Users/tetch/Desktop/Dev/SSH_KEYS/pharma-soft-site-deploy/site-deploy.pem',
       user: 'root',
       host: '192.117.146.217',
       ref: 'origin/master',
