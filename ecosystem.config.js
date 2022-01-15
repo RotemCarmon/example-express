@@ -14,13 +14,12 @@ module.exports = {
   deploy: {
     production: {
       key:'/c/Users/tetch/Desktop/Dev/SSH_KEYS/pharma-soft-site-deploy/site-deploy.pem',
-      user: 'root',
+      user: 'site-admin',
       host: '192.117.146.217',
       ref: 'origin/master',
       repo: 'git@github.com:RotemCarmon/example-express.git',
-      path: '/var/app/repos',
-      "pre-setup": "rm -rf /var/app/repos",
-      'pre-deploy-local': '',
+      path: '/home/site-admin/example-express',
+      "pre-setup": "rm -rf /home/site-admin/example-express",
       'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production && pm2 save'
     }
   }
