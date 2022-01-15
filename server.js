@@ -18,7 +18,7 @@ app.use(cors());
 let connectionType;
 
 app.get('/', (req, res) => {
-  res.send('Hello Node JS updated again!!!')
+  res.send('Hello Node JS updated again123!!!')
 });
 
 app.post('api/auth/login', (req,res) => {

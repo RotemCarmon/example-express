@@ -19,7 +19,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:RotemCarmon/example-express.git',
       path: '/home/site-admin/example-express',
-      "pre-setup": "sudo rm -rf /home/site-admin/example-express",
+      // "pre-setup": "sudo -S admin rm -rf /home/site-admin/example-express",
       'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production && pm2 save'
     }
   }
