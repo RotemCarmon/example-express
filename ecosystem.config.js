@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    script: 'node server.js',
+    script: 'server.js',
     watch: '.',
     env: {
       NODE_ENV: "development"
