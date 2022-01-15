@@ -1,5 +1,6 @@
 module.exports = {
   apps: [{
+    name:'express-example',
     script: 'npm start',
     watch: '.',
     env: {
